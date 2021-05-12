@@ -4,6 +4,6 @@
 #print("\nLanguages: \n\tPython\n\tC\n\tC++\n\tJavascript") # add newline
 message = '                  Python                                                       '
 print(message)
-print(message.strip())
-print(message.rstrip())
-print(message.lstrip())
+print(message.strip()) # strips all whitespace
+print(message.rstrip()) # remove all spaces from the right side
+print(message.lstrip()) # remove all spaces from the left side 
