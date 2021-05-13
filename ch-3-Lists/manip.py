@@ -29,7 +29,7 @@ newlist = f"Now all I have are my: {motorbikes[0].title()}, {motorbikes[1].title
 print(newlist)
 
 # using .remove('') allows for a specified value stated between the '' to be removed from the list.
-soldBike = f"Oh no, I couldn't afford the {motorbikes[0].title()} and it got reposessed."
+soldBike = f"Oh no, I couldn't afford the {motorbikes[0].title()} and it got reposessed.\n"
 
 # assigns a varible to hold the value ducati.
 tooExpensive = 'ducati'
@@ -39,5 +39,14 @@ motorbikes.remove(tooExpensive)
 print(soldBike)
 
 # print the updated list values.
-newlist = f"Now all I have is my {motorbikes[0].title()} and {motorbikes[1].title()}."
+newlist = f"Now all I have is my {motorbikes[0].title()} and {motorbikes[1].title()}.\n"
 print(newlist)
+
+# adding more bikes back to the list and then sorting them.
+motorbikes.insert(0,'ducati')
+motorbikes.insert(-1, 'suzuki')
+motorbikes.sort()
+
+print("Great news! I got my bikes back here they are in order: ")
+for bikes in motorbikes:
+    print(f"{bikes.title()}")
