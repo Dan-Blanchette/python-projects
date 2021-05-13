@@ -36,6 +36,6 @@ tooExpensive = 'ducati'
 motorbikes.remove(tooExpensive)
 print(soldBike)
 
-#print the updated list values
+# print the updated list values
 newlist = f"Now all I have is my {motorbikes[0].title()} and {motorbikes[1].title()}."
 print(newlist)
