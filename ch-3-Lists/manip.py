@@ -6,8 +6,8 @@ print(message)
 # append('') adds a new entry to the list
 motorbikes.append('ducati') 
 message1 = f"I had an impulse buy so I bought a ducati and added it to my list {motorbikes}."
-
 print(message1)
+
 # swaps ducati to be the first of the list
 motorbikes.insert(0, 'ducati') 
 
