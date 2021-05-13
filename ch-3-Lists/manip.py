@@ -47,6 +47,7 @@ motorbikes.insert(0,'ducati')
 motorbikes.insert(-1, 'suzuki')
 motorbikes.sort()
 
+# prints out the list one final time using a for loop with the update list.
 print("Great news! I got my bikes back here they are in order: ")
 for bikes in motorbikes:
     print(f"{bikes.title()}")
