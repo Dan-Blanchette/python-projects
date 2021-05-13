@@ -29,8 +29,8 @@ print(newlist)
 
 # using .remove('') allows for a specified value stated between the '' to be removed from the list
 soldBike = f"Oh no, I couldn't afford the {motorbikes[0].title()} and it got reposessed."
-# assigns a varible to hold the value ducati
 
+# assigns a varible to hold the value ducati
 tooExpensive = 'ducati'
 # removes ducati from the list based on the value of tooExpensive which is currently ducati
 motorbikes.remove(tooExpensive)
