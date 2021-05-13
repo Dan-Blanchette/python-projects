@@ -17,7 +17,9 @@ del motorbikes[-1]
 # popping removes the value at the end of the list
 message2 = f"The ducati is my new favorite out of all my bikes. I am going to put make it the first bike on my list{motorbikes}."
 print(message2)
-popped_motorbikes = motorbikes.pop() # removes the list entry from the end of the list and stores the removed entry in the variable popped_motorbikes
+
+# removes the list entry from the end of the list and stores the removed entry in the variable popped_motorbikes
+popped_motorbikes = motorbikes.pop() 
 soldBike = f"I just sold a motorcyle it was my {popped_motorbikes}."  
 print(soldBike)
 
