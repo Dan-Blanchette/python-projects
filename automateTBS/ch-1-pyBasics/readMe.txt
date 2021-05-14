@@ -1,0 +1,1 @@
+This folder covers chapter 1 of Automate The Boring Stuff 2nd Edition
