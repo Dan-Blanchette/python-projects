@@ -1,4 +1,4 @@
-# This program run a basic rock, paper, scissors game.
+# This program runs a basic rock, paper, scissors game.
 
 import random, sys
 print('ROCK, PAPER, SCISSORS')
