@@ -1,23 +1,30 @@
 # this program will find try to find out how often a streak of six heads or six tails will come up
 # from a coin flip
 import random
-numberOfStreaks = 0
-heads = 0
-tails = 0
-for experimentNumber in range(1000):
-    # code that creates a list of 100 'heads' or 'tails' values.
-    if random.randint(0,1) == 0:
-        tails += 1
-        print('Tails')
-        # if tails is a factor of 6, increment numberOfStreaks
-        if tails % 6 == 0:
-            numberOfStreaks += 1
-    else:
-        heads += 1
-        print('Heads')
-        # if heads is a factor of 6, increment numberOfStreaks
-        if heads % 6 == 0:
-            numberOfStreaks +=1
- 
+numOfStreaks = 0
+tries = 0
+experimentNumber = 0
+for experimentNumber in range(10000):
+    coin = [] # empty list
+    # code that creates a list of 100 heads or tails values
+    for i in range(100):
+        if random.randint(0, 1) == 0:
+            coin.append('H')
+        else:
+            coin.append('T')
+
     #code that checks if there is a steak of 6 heads or tails.
-print('Chance of streak: %s%%' % (numberOfStreaks / 100))
+    for i in range(len(coin)):
+        count = 0
+        for x in range(6):
+            try:
+                if coin[i] == coin[i + x]:
+                    count += 1
+                else:
+                    break
+            except IndexError:
+                break
+        if count == 6:
+            numOfStreaks += 1
+    tries += 1
+print('Chance of streak: %s%%' % (numOfStreaks / 100))
