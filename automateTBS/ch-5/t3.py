@@ -11,11 +11,18 @@ def printBoard(board):
 turn = 'X'
 for i in range(9):
     printBoard(theBoard)
-    print('Turn for ' + turn + '. Move on which space?')
+    print("\n\nChoose a space to place your tic tac toe piece")
+    print("Format = top-L, top-M, top-R, mid-L, mid-m, mid-R, low-L, low-M, low-R")
+    print('Turn for ' + turn + '. Move on which space?:') 
     move = input()
-    theBoard[move] = turn
-    if turn == 'X':
-        turn = 'O'
+    if move == "low-L" or "low-M" or "low-R" or "mid-L" or "mid-M" or "mid-R" or "top-L" or "top-M" or "top-R":
+        print(move)
+        theBoard[move] = turn
+        if turn == 'X':
+            turn = 'O'
+        else:
+            turn = 'X'
     else:
-        turn = 'X'
+        exit(1)
+print('\n')
 printBoard(theBoard)
